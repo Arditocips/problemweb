@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+		<?php 
+		include("connect_server.php");
+			$res_title = mysql_query("SELECT * FROM title WHERE company_short = '$_GET[company_short]' ");
+			$row_title = mysql_fetch_array($res_title);
+			
+			echo"$row_title[nama_title]"
+		?>
+	</title>
+    <?php include("css.php")?>
+	<!-- LOAD MAIN CSS -->
+    <link href="http://www.spectrum-group.biz/edura/style.css" rel="stylesheet" type="text/css">
+
+    <!-- LOAD DEMO CSS -->
+    <link href="http://www.spectrum-group.biz/edura/demo/demo.css" rel="stylesheet" type="text/css">
+	<script src="http://www.spectrum-group.biz/js/sticky-nav.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+<!--	
+	<script>
+$(document).ready(function(e) {   
+   var  sb = $(".sidebar");
+	s = $(".s");
+	n = $(".n");
+    sbs = "sidebar-scrolled";
+	cm3 = "col-md-3";
+    hdr = $('header').height();
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > hdr ) {
+    sb.addClass(sbs);
+	s.addClass(cm3);
+  } else {
+    sb.removeClass(sbs);
+	s.removeClass(cm3);
+  }
+});
+ });
+</script>
+<style>
+.sidebar-scrolled{
+	position:fixed;
+}
+.sidebar, .ss{
+	position:relative:
+}
+</style>
+
+-->
+
+</head><!--/head-->
+
+<body>
+
+    <header id="header">
+        <?php include("navbar.php")?>
+    </header><!--/header-->
+<style>
+	.lagi-aktif{
+		background:none;
+	}
+	.lagi-aktif a{
+		color:#4169E1;
+	}
+	.hide{
+		display:none;
+	}
+	
+</style>
+    <!-- CONTENT START -->
+	<?php include("connect_server.php"); ?>
+	
+        <section id="content">
+            <section id="shop" class="container">
+                <div class="row">
+                    <!-- sidebar start -->
+																				<?php /* INI YANG LAMA include("sidebar-scroll-lama.php") */ ?>
+					<?php
+					$res_company = mysql_query("SELECT * FROM company WHERE company_short = '$_GET[company_short]' ");
+					$row_company = mysql_fetch_array($res_company);
+					
+					if($row_company[company_short] == 'UT')
+					{
+					?>
+						<div id="sidebar" class="col-md-3 sidebar pc">
+							<div class="widget">
+							<h4 class="n">Products</h4> 
+								<div class="products-list mn">
+									<div class="media">
+										<ul class="list-unstyled link-list responsive" id="nav">
+											<li class="lagi-aktif"><a href="/product-member.php?company_short=UT">Retail Display</a></li>
+											<ul>
+											    
+												<li><a href="/product/shop-fitting-systems">Shop-Fitting Systems</a></li>
+												<!-- <li><a href="/product/sales-n-checkout-counters">Sales & Checkout Counters</a></li> -->
+												<li><a href="/product/retail-equipments">Retail Equipment</a></li> 
+												<li><a href="/product/door-systems">Door Systems</a></li>
+												<li><a href="/product/storage-systems">Storage Systems</a></li>
+											</ul>
+											<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+											<li><a href="/productmember/TD">Tridecca</a></li>
+											<li><a href="/productmember/RL">Furniture</a></li>
+											<li><a href="/productmember/IG">Intramega Global</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					<?
+					}
+					else if($row_company[company_short] == 'FF')
+					{
+					?>
+						<div id="sidebar" class="col-md-3 sidebar">
+							<div class="widget">
+							<h4 class="n">Products</h4> 
+								<div class="products-list mn">
+									<div class="media">
+										<ul class="list-unstyled link-list responsive" id="nav">
+											<li><a href="/productmember/UT">Spectrum UniTec</a></li>
+											<li class="lagi-aktif"><a href="/product-member.php?company_short=FF">Filling Solutions</a></li>
+											<ul>
+												<li><a href="/product/filing-systems">Filing Systems</a></li>
+												<li><a href="/product/enterprise-content-management">Enterprise Content Management</a></li>
+												<li><a href="/product/office-furniture">Office Furniture</a></li>
+
+											</ul>
+											<li><a href="/productmember/TD">Tridecca</a></li>
+											<li><a href="/productmember/RL">Real Lustrum</a></li>
+											<li><a href="/productmember/IG">Intramega Global</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					<?
+					}
+					else if($row_company[company_short] == 'TD')
+					{
+					?>
+						<div id="sidebar" class="col-md-3 sidebar">
+							<div class="widget">
+							<h4 class="n">Products</h4> 
+								<div class="products-list mn">
+									<div class="media">
+										<ul class="list-unstyled link-list responsive" id="nav">
+											<li><a href="/productmember/UT">Spectrum UniTec</a></li>
+											<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+											<li class="lagi-aktif"><a href="/product-member.php?company_short=TD">Office Equipment</a></li>
+											<ul>
+												<li><a href="/product/workspace">Workspace</a></li>
+												<li><a href="/product/workstation">Workstation</a></li>
+											</ul>
+											<li><a href="/productmember/RL">Real Lustrum</a></li>
+											<li><a href="/productmember/IG">Intramega Global</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					<?
+					}
+					else if($row_company[company_short] == 'RL')
+					{
+					?>
+						<div id="sidebar" class="col-md-3 sidebar">
+							<div class="widget">
+							<h4 class="n">Products</h4> 
+								<div class="products-list mn">
+									<div class="media">
+										<ul class="list-unstyled link-list responsive" id="nav">
+											<li><a href="/productmember/UT">Spectrum UniTec</a></li>
+											<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+											<li><a href="/productmember/TD">Tridecca</a></li>
+											<li class="lagi-aktif"><a href="/product-member.php?company_short=RL">Furniture</a></li>
+											<ul>
+												<li><a href="/product/wooden-furniture">Wooden Furniture</a></li>
+												<li><a href="/product/rattan-&-combined-furniture">Rattan & Combined Furniture</a></li>
+											</ul>
+											<li><a href="/productmember/IG">Intramega Global</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					<?
+					}
+					else if($row_company[company_short] == 'IG')
+					{
+					?>
+						<div id="sidebar" class="col-md-3 sidebar">
+							<div class="widget">
+							<h4 class="n">Products</h4> 
+								<div class="products-list mn">
+									<div class="media">
+										<ul class="list-unstyled link-list responsive" id="nav">
+											<li><a href="/productmember/UT">Spectrum UniTec</a></li>
+											<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+											<li><a href="/productmember/TD">Tridecca</a></li>
+											<li><a href="/productmember/RL">Real Lustrum</a></li>
+											<li class="lagi-aktif"><a href="/product-member.php?company_short=IG">Warehouse Solutions</a></li>
+											<ul>
+												<li><a href="/product/industrial-storage-systems">Industrial Storage Solutions</a></li>
+												<li><a href="/product/warehouse-management-systems">Warehouse Management Systems</a></li>
+												<li><a href="/product/logistic-automation">Logistic Automation</a></li>
+											</ul>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					<?
+					}
+					?>
+					
+					<!-- MOBILE -->
+					<?php /* INI CODE UNTUK HALAMAN AKTIF */
+					$directoryURI = $_SERVER['REQUEST_URI'];
+					$path = parse_url($directoryURI, PHP_URL_PATH);
+					$components = explode('/', $path);
+					$url = $components[1];
+					?>
+					<style>
+						.actived{
+							
+						}
+					</style>
+					<?php
+					$res_company = mysql_query("SELECT * FROM company WHERE company_short = '$_GET[company_short]' ");
+					$row_company = mysql_fetch_array($res_company);
+					
+					if($row_company[company_short] == 'UT')
+					{
+					?>
+						<div id="sidebarmobile" class="col-md-3 sidebar">
+							<div class="widget">
+							<h4 class="n">Products</h4> 
+								<div class="products-list mn">
+									<div class="media">
+										<ul class="list-unstyled link-list responsive" id="nav">
+											<li>
+												<a href="/productmember/UT">Spectrum UniTec</a>
+											</li>
+											<li>
+												<a href="/productmember/FF">Spectrum FileForce</a>
+											</li>
+											<li>
+												<a href="/productmember/TD">Tridecca</a>
+											</li>
+											<li>
+												<a href="/productmember/RL">Real Lustrum</a>
+											</li>
+											<li>
+												<a href="/productmember/IG">Intramega Global</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					<?php
+					}
+					?>					
+					<div class="s"></div>
+                    <!-- sidebar end -->
+																				<?php /* INI RIGHT BAR YANG LAMA include("right-bar.php") */ ?>
+					<div class="col-md-9 ss" style="margin-top:-80px;">
+						<div class="row martop">
+						<?php
+							$res_prod = mysql_query("SELECT * FROM categories WHERE company_short = '$_GET[company_short]' ");
+							while($row_prod = mysql_fetch_array($res_prod))
+							{
+								if($row_prod[company_short] == 'IG')
+								{
+									?>
+										<div class="col-md-12 pull-left smooth">
+											<img src="<?php echo"$row_prod[company_logo]"?>" style="width:260px;"></img>
+										</div>
+										<div class="clearfix"></div>
+										<div class="col-md-12">
+											<BR><BR>
+											<p>
+											<?php echo"$row_prod[company_description]"?>
+											</p>
+										</div>
+									<?
+								}
+								else
+								{
+									?>
+										<div class="col-md-12 pull-left smooth">
+											<img src="<?php echo"$row_prod[company_logo]"?>" style="width:130px;"></img>
+										</div>
+										<div class="clearfix"></div>
+										<div class="col-md-12">
+											<BR><BR>
+											<p>
+											<?php echo"$row_prod[company_description]"?>
+											</p>
+										</div>
+										
+									<?
+								}
+							}
+							$res_procat = mysql_query("SELECT * FROM product_categories WHERE company_short = '$_GET[company_short]' ");
+							while($row_procat = mysql_fetch_array($res_procat))
+							{
+							?>
+								<a href="<?php echo"$row_procat[procat_url]"?>">
+									<div class="col-md-<?php echo"$row_procat[class]"?>" style="border:solid #ccc 1px; 
+									background-image:url('<?php echo"$row_procat[procat_image]"?>');
+									background-size:<?php echo"$row_procat[background_size]"?>;
+									background-position:<?php echo"$row_procat[background_position]"?>;
+									height:<?php echo"$row_procat[height]"?>; 
+									background-color:<?php echo"$row_procat[background_color]"?>; 
+									color:<?php echo"$row_procat[border_color]"?>;
+									background-repeat:no-repeat;">
+										<h3 align="right" style="
+										font-size:<?php echo"$row_procat[font_size]"?>;
+										padding-top:<?php echo"$row_procat[padding_top]"?>;
+										color:<?php echo"$row_procat[font_color]"?>;">
+										
+											<!-- <?php echo"$row_procat[procat_name]"?> -->
+										</h3>
+									</div>
+								</a>
+							<?
+							}
+							?>
+							<div class="col-md-12">
+							<?
+							$res_link_cat = mysql_query("SELECT * FROM company WHERE company_short = '$_GET[company_short]'");
+							while($row_link_cat = mysql_fetch_array($res_link_cat))
+							{
+							    
+							?>
+								
+	
+								<center> <a style="margin-top:15px;" href="<?php echo"$row_link_cat[url_track]"?>" class="btn btn-info"> Visit Website </a> </center>
+							<?php
+							
+							}
+							?>
+							
+							
+							</div>
+							         <div class="col-md-12">
+							<?
+							$res_prod = mysql_query("SELECT * FROM categories WHERE company_short = '$_GET[company_short]' ");
+							while($row_prod = mysql_fetch_array($res_prod))
+							{
+							    
+							?>
+								
+	
+								<?php echo"$row_prod[categories_vm]"?>
+							<?php
+							
+							}
+							?>
+							
+							
+							</div>
+						</div>
+					</div>
+					
+				<script>
+				$(document).ready(function(){
+					if($(window).width() < 769)
+					{
+						 // Add scrollspy to <body>
+						  $('body').scrollspy({target: ".ss", offset: 50});   
+
+						  // Add smooth scrolling on all links inside the navbar
+						  $("#nav a").on('click', function(event) {
+							// Make sure this.hash has a value before overriding default behavior
+							if (this.hash !== "") {
+							  // Prevent default anchor click behavior
+							  event.preventDefault();
+
+							  // Store hash
+							  var hash = this.hash;
+
+							  // Using jQuery's animate() method to add smooth page scroll
+							  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+							  $('html, body').animate({
+								scrollTop: $(hash).offset().top -160
+							  }, 800, function(){
+						   
+								// Add hash (#) to URL when done scrolling (default click behavior)
+								window.location.hash = hash;
+							  });
+							}  // End if
+						  });
+					}
+					else if($(window).width() > 768)
+					{
+						// Add scrollspy to <body>
+						  $('body').scrollspy({target: ".ss", offset: 50});   
+
+						  // Add smooth scrolling on all links inside the navbar
+						  $("#nav a").on('click', function(event) {
+							// Make sure this.hash has a value before overriding default behavior
+							if (this.hash !== "") {
+							  // Prevent default anchor click behavior
+							  event.preventDefault();
+
+							  // Store hash
+							  var hash = this.hash;
+
+							  // Using jQuery's animate() method to add smooth page scroll
+							  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+							  $('html, body').animate({
+								scrollTop: $(hash).offset().top
+							  }, 800, function(){
+						   
+								// Add hash (#) to URL when done scrolling (default click behavior)
+								window.location.hash = hash;
+							  });
+							}  // End if
+						  });
+					}
+				 
+				});
+				</script>	
+					
+                </div>
+				
+            </section>
+        </section>
+        <!-- CONTENT END --> 
+		<BR><BR>
+    <?php include("footer.php")?>
+	
+	<!-- back to top button -->
+    <a id="back-to-top" href="#" class="btn-default btn-lg back-to-top" 
+		role="button" title="Click to return on the top page" 
+		data-toggle="tooltip" 
+		data-placement="left">
+		<span class="fa fa-arrow-up" style="width:20px;height:20px;"></span>
+	</a>
+<script src="http://www.spectrum-group.biz/js/jquery.js"></script>
+    <script type="text/javascript">
+        $('.carousel').carousel()
+    </script>
+<?php /* URUTANNYA JANGAN DI GANTI2 */ ?>
+
+	<!-- MAIN JS FILES REQUIRED ON ALL PAGES -->
+	<script src="http://www.spectrum-group.biz/edura/vendor/jquery/jquery.min.js"></script>
+    <script src="http://www.spectrum-group.biz/js/bootstrap.min.js"></script>
+	
+	<!-- BACK TO TOP BUTTON -->
+	<script src="http://www.spectrum-group.biz/js/wow.min.js"></script>
+	
+	<script src="http://new/.spectrum-group.biz/edura/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="http://new/.spectrum-group.biz/edura/vendor/SmoothScroll/SmoothScroll.min.js"></script>
+	
+	<!-- BIAR SLIDE MUNCUL -->
+	<script src="http://www.spectrum-group.biz/edura/vendor/counterup/jquery.counterup.min.js"></script>
+	
+	<!-- HERO SLIDER-->
+    <script src="http://www.spectrum-group.biz/edura/vendor/hero-slider/js/modernizr.js"></script>
+    <script src="http://www.spectrum-group.biz/edura/vendor/hero-slider/js/main.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="http://www.spectrum-group.biz/edura/vendor/owl-carousel/owl.carousel.js"></script>
+
+    <!-- FILTERIZR -->
+    <script src="http://www.spectrum-group.biz/edura/vendor/jquery/jquery.filterizr.js"></script>
+
+    <!-- EDURA JS REQUIRED ON ALL PAGES-->
+    <script src="http://www.spectrum-group.biz/edura/edura.js"></script>
+	
+    <script src="http://www.spectrum-group.biz/js/jquery.prettyPhoto.js"></script>
+    <script src="http://www.spectrum-group.biz/js/jquery.isotope.min.js"></script>
+    <script src="http://www.spectrum-group.biz/js/main.js"></script>
+    
+
+
+</body>
+</html>
