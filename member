@@ -1,0 +1,83 @@
+<!--
+<div class="center wow fadeInDown">
+                <h2>SPECTRUM GROUP MEMBERS</h2>
+                <!-- p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p-->
+<!--            </div>
+
+            <div class="row">
+                <div class="features">
+-->		<style>
+		.hover div:hover{
+			background-color:#f1f1f1;
+			height:150px; 
+			color:#f2f2f2;
+			
+		}
+		.kotak{
+			 border:solid 2px; 
+			 height:150px; 
+			 background-color:white; 
+			 color:#f2f2f2;
+		}
+		</style>
+					<div class="col-md-4" style="border:solid 2px; height:150px; background-color:#30539F; color:#f2f2f2;">
+                        <div class="feature-wrap">
+							<h3 align="right" style="font-size:24px; color:white; margin-top:80px;">
+								Our Members
+							</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+					<a href="/productmember/UT" class="hover">
+						<div class="col-md-4 kotak">
+						   <img class="pull-left" style="width:120px;margin-top:30px;" src="http://www.spectrum-group.biz/Images/Logo/UT.png">
+							<h3 align="right" style="font-size:12px; margin-top:40px; color:black; <!--color:#96989A;--> ">
+								Shop-Fitting Systems <BR> 
+								Retail Equipment <BR> 
+								Door Systems <BR> 
+								Storage Systems <BR> 
+							</h3>
+						</div><!--/.col-md-4-->
+					</a>
+					<a href="/productmember/FF" class="hover">
+						<div class="col-md-4 kotak">
+							<img class="pull-left" style="width:120px;margin-top:30px;" src="http://www.spectrum-group.biz/Images/Logo/FF.png">
+							<h3 align="right" style="font-size:12px; margin-top:40px; color:black; <!--color:#96989A;--> ">
+								Filing Systems <BR>
+								Enterprise Content Management <BR>
+								Office Furniture
+							</h3>
+						</div><!--/.col-md-4-->
+					</a>
+					<div class="clearfix"></div>
+					<a href="/productmember/TD" class="hover">
+						<div class="col-md-4 kotak">
+							<img class="pull-left" style="width:120px;margin-top:30px;" src="http://www.spectrum-group.biz/Images/Logo/TD.png">
+							<h3 align="right" style="font-size:12px; margin-top:50px; color:black; <!--color:#96989A;--> ">
+								Workspaces <BR>
+								Workstations
+							</h3>
+						</div><!--/.col-md-4-->
+					</a>
+					<a href="/productmember/RL" class="hover">
+						<div class="col-md-4 kotak">
+							<img class="pull-left" style="width:120px;margin-top:30px;" src="http://www.spectrum-group.biz/Images/Logo/RL.png">
+							<h3 align="right" style="font-size:12px; margin-top:50px; color:black; <!--color:#96989A;--> ">
+								Wooden Furniture <BR>
+								Rattan & Combined Furniture
+							</h3>
+						</div><!--/.col-md-4-->
+					</a>
+					<a href="/productmember/IG" class="hover">
+						<div class="col-md-4 kotak">
+							<img class="pull-left" style="width:120px;margin-top:60px;" src="http://www.spectrum-group.biz/Images/Logo/IG.png">
+							<h3 align="right" style="font-size:12px; margin-top:30px; color:black; <!--color:#96989A;--> ">
+								Industrial Storage Solutions <BR>
+								Warehouse Management Systems <BR>
+								Logistics Automation
+							</h3>
+						</div><!--/.col-md-4-->
+					</a>
+					<div class="clearfix"></div>
+<!--
+                </div><!--/.services-->
+<!--            </div><!--/.row-->  
