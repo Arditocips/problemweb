@@ -1,0 +1,134 @@
+<nav class="navbar navbar-inverse" style="background-color:#DCDCDC;" role="banner">
+            <div class="container">
+                <div class="navbar-header"style="height:100px;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+						<img style="width:150px; margin-top:-30px;"src="http://www.spectrum-group.biz/Images/Logo/Logo.png" alt="logo">
+					</a>
+                </div>
+				<?php /* INI CODE UNTUK HALAMAN AKTIF */
+					$directoryURI = $_SERVER['REQUEST_URI'];
+					$path = parse_url($directoryURI, PHP_URL_PATH);
+					$components = explode('/', $path);
+					$url = $components[1];
+				?>
+                <div style="background-color:#DCDCDC;" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav"style="font-size:12px;">
+						<li class="<?php if ($url=="about") { echo "active"; } else  { echo "";}?>"><a href="/about"><B>About</B></a></li>
+						<!-- <li class="<?php if ($url=="product" OR $url=="productmember") { echo "active"; } else  { echo "";}?>"><a href="/product"><B>Products</B></a></li> -->
+                        
+						 
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="/product">
+								<B>Products</B> 
+								<i class="fa fa-angle-down"></i>
+							</a>l
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/product"><B>Product List</B></a>
+								</li>
+								
+								 <li class="dropdown-item">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="/productmember/UT"><b>Spectrum UniTec</b></a>
+        <ul class="dropdown-submenu" style="background-color:#FFFFFF; font-size:13px" >
+          <li><a font color="white"  href="/product/shop-fitting-systems">Shop-Fitting Systems & Equipment</a></li>
+          <li><a font color="white"  href="/product/retail-equipment">Retail Concept</a></li>
+          <li><a font color="white" href="/product/door-systems">Door Systems</a></li>
+          <li><a font color="white" href="/product/storage-systems">Storage Systems</a></li></ul>
+          
+          <li class="dropdown-item">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="/productmember/UT"><b>Spectrum FileForce</b></a>
+        <ul class="dropdown-submenu" style="background-color:#FFFFFF; font-size:13px">
+          <li><a font color="white" href="/product/shop-fitting-systems">Filling Systems</a></li>
+          <li><a font color="white" href="/product/enterprise-content-management">Enterprise Content Management</a></li>
+          <li><a font color="white" href="/product/office-furniture">Office Furniture</a></li></ul>
+          
+          <li class="dropdown-item">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="/productmember/TD"><b>Tridecca</b></a>
+        <ul class="dropdown-submenu" style="background-color:#FFFFFF; font-size:13px">
+          <li><a font color="white" href="/product/workspace">Workspace</a></li>
+          <li><a font color="white" href="/product/workstation">Workstation</a></li></ul>
+          
+          <li class="dropdown-item">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="/productmember/RL"><b>Real Lustrum</b></a>
+        <ul class="dropdown-submenu" style="background-color:#FFFFFF; font-size:13px">
+          <li><a font color="white" href="/product/wooden-furniture">Wooden Furniture</a></li>
+          <li><a font color="white" href="product/rattan-&-combined-furniture">Rattan & Combined Furniture</a></li></ul>
+          
+          <li class="dropdown-item">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="/productmember/IG"><b>Intramega Global</b></a>
+        <ul class="dropdown-submenu" style="background-color:#FFFFFF; font-size:13px">
+          <li><a font color="white" href="/product/industrial-storage-systems">Industrial Storage Systems</a></li>
+          <li><a font color="white" href="/product/warehouse-management-systems">Warehouse Management Systems</a></li>
+          <li><a font color="white" href="/product/logistic-automation">Logistic Automation</a></li></ul
+								
+						</li>
+						
+						        </li>
+							</ul>
+						</li>
+						
+					    <!-- 
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="/product">
+								<B>Products</B> 
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/product/ut/shop-fitting-systems"><B>Spectrum Unitec</B></a>
+								</li>
+								<li>
+									<a href="/product/ff/filing-systems"><B>Spectrum FileForce</B></a>
+								</li>
+								<li>
+									<a href="/product/td/workspace"><B>Tridecca</B></a>
+								</li>
+								<li>
+									<a href="/product/rl/wooden-furniture"><B>Real Lustrum</B></a>
+								</li>
+								<li>
+									<a href="/product/ig/industrial-storage-solutions"><B>Intramega Global</B></a>
+								</li>
+							</ul>
+						</li>
+						-->
+                                    
+                                
+                        <li class="<?php if ($url=="references" OR $url=="referencemember") { echo "active"; } else  { echo "";}?>"><a href="/references"><B>References</B></a></li>
+						
+                        <li><a href="#"><B>News</B></a></li> 
+						
+                        <li class="<?php if ($url=="contact") { echo "active"; } else  { echo "";}?>">
+							<a href="http://www.spectrum-group.biz/contact">
+								<B>Contact</B>
+							</a>
+						</li>  
+						
+						<li class="<?php if ($url=="career") { echo "active"; } else  { echo "";}?>">
+							<a href="http://www.spectrum-group.biz/career">
+								<B>Career</B>
+							</a>
+						</li>
+						
+						<!--
+						<li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog-item.html">Blog Single</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="shortcodes.html">Shortcodes</a></li>
+                            </ul>
+                        </li>	
+						-->
+                    </ul>
+                </div>
+            </div><!--/.container-->
+			<b style="float:right;margin-top:-80px;margin-right:20px;"> <a href="http://id.spectrum-group.biz"> <img src="icon-id.png" width="30" height="30"/> </a> </b>
+        </nav><!--/nav-->
