@@ -1,0 +1,312 @@
+<style>
+	.lagi-aktif{
+		background:none;
+	}
+	.lagi-aktif a{
+		color:#4169E1;
+	}
+	li a{
+		color:#666666;
+	}
+</style>
+<?php
+if($_GET[product_categories_url] == 'shop-fitting-systems')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>
+						<ul>
+							<li class="lagi-aktif"><a href="/product/shop-fitting-systems">Shop-Fitting Systems</a></li>
+							<!-- <li><a href="/product/sales-n-checkout-counters">Sales & Checkout Counters</a></li>-->
+							<li><a href="/product/retail-equipment">Retail Equipment</a></li> 
+							<li><a href="/product/door-systems">Door Systems</a></li>
+							<li><a href="/product/storage-systems">Storage Systems</a></li>
+						</ul>
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+else if($_GET[product_categories_url] == 'door-systems')
+{
+	?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>
+						<ul>
+							<li><a href="/product/shop-fitting-systems">Shop-Fitting Systems</a></li>
+							<!-- <li><a href="/product/sales-n-checkout-counters">Sales & Checkout Counters</a></li>-->
+							<li><a href="/product/retail-equipment">Retail Equipment</a></li> 
+							<li class="lagi-aktif"><a href="/product/door-systems">Door Systems</a></li>
+							<li><a href="/product/storage-systems">Storage Systems</a></li>
+						</ul>
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+else if($_GET[product_categories_url] == 'storage-systems')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>
+						<ul>
+							<li><a href="/product/shop-fitting-systems">Shop-Fitting Systems</a></li>
+							<!-- <li><a href="/product/sales-n-checkout-counters">Sales & Checkout Counters</a></li>-->
+							<li><a href="/product/retail-equipment">Retail Equipment</a></li> 
+							<li><a href="/product/door-systems">Door Systems</a></li>
+							<li class="lagi-aktif"><a href="/product/storage-systems">Storage Systems</a></li>
+						</ul>
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+else if($_GET[product_categories_url] == 'wooden-furniture')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>						
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<ul>
+							<li class="lagi-aktif"><a href="/product/wooden-furniture">Wooden Furniture</a></li>
+							<li><a href="/product/rattan-n-combined-furniture">Rattan & Combined Furniture</a></li>
+						</ul>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+
+else if($_GET[product_categories_url] == 'filing-systems')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>						
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+												<ul>
+							<li class="lagi-aktif"><a href="/product/filing-systems">Filing Systems</a></li>
+							<li><a href="/product/enterprise-content-management">Enterprise Content Management</a></li>
+							<li><a href="/product/office-furniture">Office Furniture</a></li>
+						</ul>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+
+else if($_GET[product_categories_url] == 'enterprise-content-management')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>						
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+												<ul>
+							<li><a href="/product/filing-systems">Filing Systems</a></li>
+							<li class="lagi-aktif"><a href="/product/enterprise-content-management">Enterprise Content Management</a></li>
+							<li><a href="/product/office-furniture">Office Furniture</a></li>
+						</ul>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+
+else if($_GET[product_categories_url] == 'office-furniture')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>						
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+												<ul>
+							<li><a href="/product/filing-systems">Filing Systems</a></li>
+							<li><a href="/product/enterprise-content-management">Enterprise Content Management</a></li>
+							<li class="lagi-aktif"><a href="/product/office-furniture">Office Furniture</a></li>
+						</ul>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+
+else if($_GET[product_categories_url] == 'workspace')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>						
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<ul>
+							<li class="lagi-aktif"><a href="/product/workspace">Workspace</a></li>
+							<li><a href="/product/workstation">Workstation</a></li>
+						</ul>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+
+else if($_GET[product_categories_url] == 'workstation')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>						
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<ul>
+							<li><a href="/product/workspace">Workspace</a></li>
+							<li class="lagi-aktif"><a href="/product/workstation">Workstation</a></li>
+						</ul>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+
+else if($_GET[product_categories_url] == 'industrial-storage-solution')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>						
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+						<ul>
+							<li class="lagi-aktif"><a href="/product/industrial-storage-solution">Industrial Storage Solution</a></li>
+							<li><a href="/product/warehouse-management-systems">Warehouse Management Systems</a></li>
+							<li><a href="/product/logistic-automation">Logistic Automation</a></li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+
+else if($_GET[product_categories_url] == 'warehouse-management-systems')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>						
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+						<ul>
+							<li><a href="/product/industrial-storage-solution">Industrial Storage Solution</a></li>
+							<li class="lagi-aktif"><a href="/product/warehouse-management-systems">Warehouse Management Systems</a></li>
+							<li><a href="/product/logistic-automation">Logistic Automation</a></li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+
+else if($_GET[product_categories_url] == 'logistic-automation')
+{
+?>
+		<div class="widget">
+		<h4 class="n">Products</h4> 
+			<div class="products-list mn">
+				<div class="media">
+					<ul class="list-unstyled link-list responsive" id="nav">
+						<li><a href="/productmember/UT">Spectrum UniTec</a></li>						
+						<li><a href="/productmember/FF">Spectrum FileForce</a></li>
+						<li><a href="/productmember/TD">Tridecca</a></li>
+						<li><a href="/productmember/RL">Real Lustrum</a></li>
+						<li><a href="/productmember/IG">Intramega Global</a></li>
+						<ul>
+							<li><a href="/product/industrial-storage-solution">Industrial Storage Solution</a></li>
+							<li><a href="/product/warehouse-management-systems">Warehouse Management Systems</a></li>
+							<li class="lagi-aktif"><a href="/product/logistic-automation">Logistic Automation</a></li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+<?php
+}
+?>
